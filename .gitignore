@@ -1,0 +1,11 @@
+SteamGameProject/nupkg/
+
+SteamGameProject/coverage/*
+SteamGameProject/.godot/
+!SteamGameProject/coverage/.gdignore
+
+.godot/
+bin/
+obj/
+.generated/
+.DS_Store
