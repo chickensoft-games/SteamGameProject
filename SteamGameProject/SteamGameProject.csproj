@@ -10,7 +10,7 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <!-- For Steamworks.NET: -->
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
-    <PlatformTarget>x64</PlatformTarget>
+    <!-- <PlatformTarget>x64</PlatformTarget> -->
     <!-- To show generated files -->
     <!-- <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <CompilerGeneratedFilesOutputPath>.generated</CompilerGeneratedFilesOutputPath> -->
