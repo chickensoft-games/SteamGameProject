@@ -8,10 +8,8 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.IO;
 using System;
-using System.Runtime.CompilerServices;
 
 public partial class Main : Node2D {
-  [MethodImpl(MethodImplOptions.NoInlining)]
   public Main() {
     NativeLibrary.Load(
       Path.Join(AppContext.BaseDirectory, "libsteam_api.dylib")
