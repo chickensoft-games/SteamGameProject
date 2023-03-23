@@ -2,13 +2,13 @@ namespace SteamGameProject;
 
 using Godot;
 #if DEBUG
-using System.Reflection;
 using GoDotTest;
+#endif
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.IO;
 using System;
 using System.Runtime.CompilerServices;
-#endif
 
 public partial class Main : Node2D {
   [MethodImpl(MethodImplOptions.NoInlining)]
@@ -16,7 +16,13 @@ public partial class Main : Node2D {
     NativeLibrary.Load(
       Path.Join(AppContext.BaseDirectory, "libsteam_api.dylib")
     );
+    var me = Assembly.GetExecutingAssembly();
+    var references = me.GetReferencedAssemblies();
+    var steamworksDotNet = Array.Find(
+      references, a => a.Name == "Steamworks.NET"
+    )!;
     AppDomain.CurrentDomain.AssemblyResolve += ResolveAssemblies;
+    var steamworksDotNetAssembly = Assembly.Load(steamworksDotNet);
   }
 
   private Assembly? ResolveAssemblies(object? sender, ResolveEventArgs args) {

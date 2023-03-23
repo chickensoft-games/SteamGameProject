@@ -47,7 +47,7 @@
     <!-- Also, see README in solution directory. -->
 
     <!-- Steamworks.NET -->
-    <Reference Include="Steamworks.NET, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Steamworks.NET, Version=20.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Link>Steamworks.NET.dll</Link>
       <HintPath Condition=" '$(OS)' == 'Windows_NT' ">Steamworks/Windows-x64/Steamworks.NET.dll</HintPath>
